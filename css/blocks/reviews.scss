@@ -1,0 +1,68 @@
+@import "../vars";
+
+.reviews {
+  padding: 4.6rem 0;
+  background: #332F30 url($ReviewsDir + "reviews.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+  .reviews__item {
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+
+    .reviews__text {
+
+      font-size: .93rem;
+      color: $white;
+      line-height: 2.2;
+
+      text-align: center;
+
+    }
+
+    .reviews__author {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      transform: translate3d(-50%, 50%, 0);
+
+      .reviews__photo {
+        display: block;
+        margin: 0 auto .6rem;
+        width: 103px;
+        height: 103px;
+
+        border: solid 4px #EFEFEF;
+        border-radius: 50%;
+
+      }
+      .reviews__name {
+        font-size: 1.06rem;
+        font-weight: 700;
+        color: $black;
+        margin-bottom: 0.2rem;
+      }
+      .reviews__company {
+        font-size: .94rem;
+        font-style: italic;
+        color: $gray;
+        margin-bottom: 0.4rem;
+      }
+      .reviews__raiting {
+        .reviews__raiting--item {
+          width: 13px;
+          height: 13px;
+
+          &--unactive {
+            opacity: .5;
+          }
+        }
+      }
+    }
+  }
+}

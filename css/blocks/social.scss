@@ -1,0 +1,22 @@
+@import "../vars";
+
+.social {
+  margin-bottom: 42px;
+  display: flex;
+  .social__link {
+    text-decoration: none;
+    margin-right: 10px;
+
+    transition: transform .2s linear;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+
+  }
+}
